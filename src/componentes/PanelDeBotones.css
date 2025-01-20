@@ -1,0 +1,50 @@
+.component-button-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    background: #1c191c;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-row {
+    display: flex;
+    flex: 1 0 auto;
+    transition: all 0.2s ease;
+}
+
+/* Dark mode support */
+.dark-mode .component-button-panel {
+    background: #121212;
+    box-shadow: 0 4px 12px rgba(76, 209, 55, 0.1);
+}
+
+/* Hover effect for the entire row */
+.button-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .component-button-panel {
+        border-radius: 0;
+    }
+}
+
+/* Focus visible outline for keyboard navigation */
+.component-button-panel:focus-within {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.3);
+}
+
+/* Grid layout improvements */
+.button-row:last-child {
+    border-bottom: none;
+}
+
+/* Animation for button press feedback */
+.button-row:active {
+    background: rgba(255, 255, 255, 0.05);
+}

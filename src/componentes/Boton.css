@@ -1,0 +1,108 @@
+.component-button {
+    display: inline-flex;
+    width: 25%;
+    flex: 1 0 auto;
+}
+
+.component-button.wide {
+    width: 50%;
+}
+
+.component-button button {
+    background: #e0e0e0;
+    border: 0;
+    font-size: 2em;
+    margin: 0 1px 1px 0;
+    flex: 1 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.component-button button:active {
+    transform: scale(0.95);
+}
+
+.component-button button:focus-visible {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #4a90e2;
+    z-index: 1;
+}
+
+.component-button.orange button {
+    background: #f5923e;
+    color: white;
+}
+
+.component-button.orange button:hover {
+    background: #da7b2b;
+}
+
+.component-button.green button {
+    background: #5f9c4b;
+    color: white;
+}
+
+.component-button.green button:hover {
+    background: #4c8339;
+}
+
+.component-button.red button {
+    background: #d64545;
+    color: white;
+}
+
+.component-button.red button:hover {
+    background: #b83a3a;
+}
+
+/* Dark mode support */
+.dark-mode .component-button button {
+    background: #424242;
+    color: white;
+}
+
+.dark-mode .component-button button:hover {
+    background: #505050;
+}
+
+.dark-mode .component-button.orange button {
+    background: #c17431;
+}
+
+.dark-mode .component-button.orange button:hover {
+    background: #a66329;
+}
+
+.dark-mode .component-button.green button {
+    background: #4a7a3a;
+}
+
+.dark-mode .component-button.green button:hover {
+    background: #3d6530;
+}
+
+.dark-mode .component-button.red button {
+    background: #b83a3a;
+}
+
+.dark-mode .component-button.red button:hover {
+    background: #9e3232;
+}
+
+@media (hover: hover) {
+    .component-button button:hover {
+        background: #d0d0d0;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .component-button button {
+        font-size: 1.5em;
+    }
+}
