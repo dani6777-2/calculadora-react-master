@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Calculadora React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una calculadora moderna y elegante construida con React. Este proyecto implementa una calculadora completamente funcional con una interfaz de usuario intuitiva y soporte para modo oscuro.
 
-## Available Scripts
+![Calculadora React](preview.png)
 
-In the project directory, you can run:
+## 🚀 Características
 
-### `npm start`
+- Operaciones básicas (suma, resta, multiplicación, división)
+- Porcentajes y números negativos
+- Modo oscuro/claro
+- Diseño responsive
+- Soporte para teclado
+- Manejo de errores
+- Animaciones suaves
+- Interfaz moderna y minimalista
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologías Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- CSS3 con variables y modo oscuro
+- Big.js para cálculos precisos
+- CSS Grid y Flexbox para el layout
 
-### `npm test`
+## 📦 Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tuusuario/calculadora-react.git
+```
 
-### `npm run build`
+2. Instala las dependencias:
+```bash
+cd calculadora-react
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Inicia el servidor de desarrollo:
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎯 Uso
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+La calculadora soporta las siguientes operaciones:
 
-### `npm run eject`
+- **Operaciones Básicas**: +, -, x, ÷
+- **Decimales**: Usa el punto (.) para números decimales
+- **Porcentaje**: Convierte el número actual a porcentaje
+- **Cambio de Signo**: Cambia entre positivo y negativo
+- **Borrar**: AC limpia todos los valores
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### ⌨️ Atajos de Teclado
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `0-9`: Números
+- `+`, `-`, `*`, `/`: Operaciones
+- `Enter`: Igual (=)
+- `Escape`: Limpiar (AC)
+- `.`: Punto decimal
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎨 Personalización
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+El proyecto utiliza variables CSS que pueden ser fácilmente modificadas en `index.css`:
 
-## Learn More
+```css
+:root {
+  --primary-bg: #f0f2f5;
+  --calculator-bg: #ffffff;
+  --calculator-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  --text-color: #2d3436;
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contribuir
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Las contribuciones son bienvenidas. Por favor, sigue estos pasos:
 
-### Code Splitting
+1. Fork el proyecto
+2. Crea una rama para tu característica (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📝 Licencia
 
-### Analyzing the Bundle Size
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ✨ Próximas Características
 
-### Making a Progressive Web App
+- [ ] Historial de operaciones
+- [ ] Funciones científicas
+- [ ] Temas personalizables
+- [ ] Conversión de unidades
+- [ ] Modo de precisión extendida
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🐛 Reporte de Bugs
 
-### Advanced Configuration
+Si encuentras algún bug, por favor abre un issue en el [repositorio de GitHub](https://github.com/tuusuario/calculadora-react/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👥 Autores
 
-### Deployment
+- **Tu Nombre** - *Trabajo Inicial* - [TuUsuario](https://github.com/tuusuario)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🙏 Agradecimientos
 
-### `npm run build` fails to minify
+- Inspirado en la calculadora de iOS
+- Gracias a los contribuidores de Big.js
+- Comunidad de React por su documentación y recursos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+⌨️ con ❤️ por [Tu Nombre](https://github.com/tuusuario)
